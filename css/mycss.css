@@ -1,0 +1,31 @@
+svg{
+    /* padding: 10px; */
+    /* width: 100px; */
+    /* height: 100px;   */
+    transform: rotate(-90deg);
+    overflow: initial;
+} 
+  
+.bottom{
+    stroke-width:10%;
+    fill:none; 
+    stroke: #07ffb8; 
+    /* position: relative; */
+    z-index: 1;
+    stroke-dashoffset:calc(100 * 4);
+    stroke-dasharray:calc(100 * 4);
+    stroke-dashoffset:calc((100 * 4) - ((100 * 4) * 50) / 100);       
+}
+
+.top{
+    stroke-width:7%;
+    fill:none; 
+    stroke: #b0fce6; 
+    /* position: relative; */
+         
+}
+
+.slider{
+    height: 3px;
+}
+

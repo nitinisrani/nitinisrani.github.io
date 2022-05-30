@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="https://kit.fontawesome.com/161d72e43c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+</head>
+<body class=" font-myroboto ">
+    <div class=" md:grid grid-flow-row grid-cols-12 w-full md:h-[100vh] ">
+        
+
+        <header class="col-span-3   md:h-[100vh] md:bg-gray-100  md:grid grid-flow-row grid-cols-12 ">
+          <nav class="col-span-1 w-full bg-white  text-gray-400 text-center  fixed md:static bottom-0 z-10 md:block ">
+            <div class="fixed top-4 right-4 md:hidden" ><i class="fa-regular fa-bell"></i></div>
+            <img class=" w=[90%] hidden md:block  mx-auto md:mt-4 " src="pic/logo.png" alt="">
+            <div class="w-full  hidden  text-center md:block "><i class="fa-solid fa-magnifying-glass"></i></div>
+            <ul class="w-full py-4 rounded-sm flex justify-around  md:block md:mt-14 ">
+                <li class="md:my-8 "><a href="index.html" class=" active:text-white active:bg-blue-700 p-1 rounded-md  "><i class="fa-solid fa-house  "></i></a></li>
+                <li class="md:my-8   "><a href="#"><i class="fa-solid fa-border-all"></i></a></li>
+                <li class="md:my-8  "><a href="#" ><i class="fa-solid fa-rectangle-list"></i></a></li>
+                <li class="md:my-8   "><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li class="md:hidden  "><a href="#"><i class="fa-solid fa-magnifying-glass"></i></li></a>
+            </ul> 
+            <div class="fixed  md:bottom-14 md:left-0 ml-2">
+              <div class="py-4" ><i class="fa-regular fa-bell"></i></div>
+              <div class=" "><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+            </div>
+            
+          </nav>
+          <div class="col-span-11 ">
+            <div class=" flex  w-full justify-self-start items-center p-10  mt-14 ml-6 md:p-0 ">
+              <img src="pic/shutterstock_341919467.jpg" alt="" class=" w-14 h-14 rounded-full  ">
+              <div class="p-5">
+                <h2 class=" font-bold text-2xl ">Hi Mike</h2>
+                <p class=" text-sm ">wellcome back</p>
+              </div>                
+            </div>
+
+          <div class=" bg-gray-100 rounded-lg p-5 w-full mb-4 ">
+              <h4 class=" font-bold pt-6  ">Today</h4>
+              <p class="font-bold text-3xl pb-0 mb-0 ">$19,892</p>
+              <p class="text-xs text-gray-400 ">account balance</p>
+              <div class=" mt-6 flex md:block ">
+                <div class=" my-2 ">
+                  <p class=" font-bold">$4,000</p>
+                  <p class="text-xs text-gray-400">year-to-date <span class=" hidden md:block ">contributions</span> </p>
+                </div>
+                <div class=" m-2">
+                  <p class=" font-bold ">$890</p>
+                  <p class=" text-xs text-gray-400 " >total interest</p>
+                </div>                  
+              </div>                
+              <div class="m-2 w-full md:w-1/2 bg-indigo-600 text-sm text-white py-3 align-middle text-center  rounded-md "><a href="#">i want to</a></div>
+          </div>
+
+          <div class="bg-gray-100 rounded-lg p-5 m-auto  ">
+              <h4 class=" font-bold mb-5 ">Recent Transections</h4>
+              <div class="divide-y divide-gray-300 ">
+                <div class="py-4">
+                  <p class="text-xs text-gray-500 ">2020-08-22</p>
+                  <p class="text-sm font-bold ">withdrawal transfer to bank-xx11</p>
+                </div>
+                <div class="py-4">
+                  <p class=" text-xs text-gray-500 ">2020-08-22</p>
+                  <p class="text-sm font-bold ">withdrawal transfer to bank-xx11</p>
+                </div>
+                <div class="py-4">
+                  <p class="text-xs text-gray-500 ">2020-08-22</p>
+                  <p class="text-sm font-bold ">withdrawal transfer to bank-xx11</p>
+                </div>
+              </div>              
+          </div>
+          </div>
+            
+        </header>
+
+
+        <section class="h-[100vh] w-[90%] col-span-7  mx-auto md:mt-14 ">
+            <div>
+                <p class="text-xs text-indigo-500 ">retirement income</p>
+                <h2 class="font-bold ">starting year 2056</h2>
+            </div >
+            <div class="grid md:grid-flow-row grid-cols-3 mt-5 w-[90%] m-auto content-between">
+                <div class="col-span-3 md:col-span-1 border-b border-indigo-500 pb-2 w-[80%] m-auto ">
+                  <p class="font-bold ">$30000</p>
+                  <p class="text-xs text-gray-400 ">my goal</p>
+                </div>
+                <div class="border-b border-indigo-500 pb-2 w-[80%] m-auto">
+                  <p class="font-bold">59%</p>
+                  <p class="text-xs text-gray-400 ">goal achived</p>
+                </div>
+                <div class="border-b border-indigo-500 pb-2 w-[80%] m-auto">
+                  <p class="font-bold">59%</p>
+                  <p class="text-xs text-gray-400 ">goal achived</p>
+                </div>
+                
+            </div>
+
+            <div class="mt-8">
+              <div class="flex justify-center justify-items-center mt-4 ">
+                <div class="flex  justify-items-center "><div class="w-3 h-2 m-1 rounded-md bg-indigo-800 "></div><span class="text-xs ">Empolyer</span></div>
+                <div class="flex  justify-items-center "><div class="w-3 h-2 m-1 rounded-md bg-indigo-500 "></div><span class="text-xs ">Empolyer</span></div>
+                <div class="flex  justify-items-center "><div class="w-3 h-2 m-1 rounded-md bg-indigo-400 "></div><span class="text-xs ">Empolyer</span></div>
+              </div>              
+              <canvas id="chart"></canvas>
+            </div>
+            
+            <div>
+              <div class=" w-auto ">
+                <div class="py-4">
+                  <h4 class=" font-bold ">how do i campare to my peers?</h4>
+                  <p class=" text-xs text-gray-400">these numbers represent current goal achivements</p>
+                </div>
+                <div class=" md:grid grid-cols-4 grid-flow-row ">
+                  <ul class=" divide-y divide-gray-300 col-span-1 ">
+                    <li class="text-xs py-2 ">
+                      <label for="age">Age:</label>
+                      <select  name="age" id="age">
+                        <option value="30">Under 30</option>
+                      </select>
+                    </li>
+                    <li class="text-xs  py-2">
+                      <label  for="salary">salary:</label>
+                      <select  name="salary" id="salary">
+                        <option  value="30">Under 30</option>
+                      </select>
+                    </li>
+                    <li class="text-xs py-2 ">
+                      <label  for="gender">gender:</label>
+                      <select name="gender" id="gender">
+                        <option value="30">Under 30</option>
+                      </select>
+                    </li>
+                  </ul>
+
+                  <div class=" flex mx-auto justify-around w-[80%] col-span-3 ">
+                      <div class="  relative m-3 w-20 h-20 ">
+                        <p class="text-sm font-bold absolute inset-7 ">70%</p>
+                        <svg viewBox="0 0 80 80" preserveAspectRatio="xMinYMin meet">
+                          <circle class="top" cy="50%" cx="50%" r="50%" />
+                          <circle class="bottom" cy="50%" cx="50%" r="50%" />
+                        </svg>
+                        <p class="text-xs text-center p-1 ">Average</p>
+                      </div>                   
+
+                    <div class="relative m-3 w-20 h-20 ">
+                      <p class="text-sm font-bold absolute inset-7 ">70%</p>
+                      <svg viewBox="0 0 80 80" preserveAspectRatio="xMinYMin meet">
+                        <circle class="top" cy="50%" cx="50%" r="50%" />
+                        <circle class="bottom" cy="50%" cx="50%" r="50%" />
+                      </svg>
+                      <p class="text-xs text-center p-1 ">Average</p>
+                    </div>
+
+                    <div class="relative m-3 w-20 h-20 ">
+                      <p class="text-sm font-bold absolute inset-7 ">70%</p>
+                      <svg viewBox="0 0 80 80" preserveAspectRatio="xMinYMin meet">
+                        <circle class="top" cy="50%" cx="50%" r="50%" />
+                        <circle class="bottom" cy="50%" cx="50%" r="50%" />
+                      </svg>
+                      <p class="text-xs text-center p-1 ">Average</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </section>
+
+
+        <aside class="col-span-2 w-full  md:my-14  ">
+          <div class=" p-2 bg-gray-100 rounded-md ">
+            <div>
+              <h4 class="font-bold ">retirement strategy</h4>
+              <div class="w-full  ">
+                <p class="text-xs mt-6 ">Default range slider:</p>
+                <Input class="slider w-9/12" type="range" name=""  value="12" min="0" max="100" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+                  <span class="text-xs rounded-sm  py-0.5 px-2 bg-white " id="rangeValue"></span><span class="text-xs ml-0.5 rounded-sm p-0.5 bg-white">%</span></Input>
+              </div> 
+
+              <div class="w-full mt-6  ">
+                <p class="text-xs ">Default range slider:</p>
+                <Input class="slider w-9/12" type="range" name=""  value="45" min="0" max="100" onChange="rangeSlide1(this.value)" onmousemove="rangeSlide1(this.value1)">
+                  <span class="text-xs py-0.5 px-2 bg-white " id="rangeValue1"></span></Input>
+              </div>
+                
+            </div>
+            <div class="py-4 text-xs">
+              <p class="py-4">Employer contributions<span>8.4%</span></p>
+              <p class="pb-4">Intrest rate<span>8.4%</span></p>
+              <button class="bg-indigo-500 py-2 px-8 rounded-md text-white mt-4 text-sm w-full ">Update</button>
+              <div class="text-indigo-500 mt-4 w-full text-center">
+                <a  href="#">View help Doc ></a>
+              </div>
+            </div>
+          
+            
+
+            
+          </div>
+         
+          
+        </aside>
+
+    </div>
+
+
+    <script >
+    
+                function rangeSlide(value) {
+                    document.getElementById('rangeValue').innerHTML = value ;
+                }
+                function rangeSlide1(value) {
+                    document.getElementById('rangeValue1').innerHTML = value;
+                }
+        var ctx = document.getElementById('chart');
+
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['20','', '25','', '30','', '35','', '40','', '60','', '65' ],
+    datasets: [
+      {
+        label: 'Empolyer',
+        data: [5 , 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90],
+        backgroundColor: '#2901ad',
+      },
+      {
+        label: 'Empolyee',
+        data: [5 , 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90],
+        backgroundColor: '#5835cc',
+      },
+      {
+        label: 'Total Interest',
+        data: [5 , 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90],
+        backgroundColor: '#8266dd',
+      }
+    ]
+  },
+  options: {
+    legend: {
+        		display: false,
+        },
+    scales: {
+      xAxes: [{ stacked: true }],
+      yAxes: [{ stacked: true }]
+      
+    }
+  }
+});
+    </script>
+</body>
+</html>
