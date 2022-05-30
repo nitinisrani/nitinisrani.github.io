@@ -989,6 +989,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: static;
   }
 
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:bottom-14 {
     bottom: 3.5rem;
   }
