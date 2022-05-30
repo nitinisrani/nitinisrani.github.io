@@ -12,11 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 </head>
-<body class=" font-myroboto ">
-    <div class=" md:grid grid-flow-row grid-cols-12 w-full md:h-[100vh] ">
+<body class=" font-myroboto">
+    <div class=" md:grid grid-flow-row grid-cols-12 w-full md:h-[100vh] rounded-md ">
         
 
-        <header class="col-span-3   md:h-[100vh] md:bg-gray-100  md:grid grid-flow-row grid-cols-12 ">
+        <header class="col-span-3   md:h-[100vh] md:bg-gray-50  md:grid grid-flow-row grid-cols-12 ">
           <nav class="col-span-1 w-full bg-white  text-gray-400 text-center  fixed md:static bottom-0 z-10 md:block ">
             <div class="fixed top-4 right-4 md:hidden" ><i class="fa-regular fa-bell"></i></div>
             <img class=" w=[90%] hidden md:block  mx-auto md:mt-4 " src="pic/logo.png" alt="">
@@ -43,7 +43,7 @@
               </div>                
             </div>
 
-          <div class=" bg-gray-100 rounded-lg p-5 w-full mb-4 ">
+          <div class=" bg-gray-50 rounded-lg p-5 w-full mb-4 ">
               <h4 class=" font-bold pt-6  ">Today</h4>
               <p class="font-bold text-3xl pb-0 mb-0 ">$19,892</p>
               <p class="text-xs text-gray-400 ">account balance</p>
@@ -60,7 +60,7 @@
               <div class="m-2 w-full md:w-1/2 bg-indigo-600 text-sm text-white py-3 align-middle text-center  rounded-md "><a href="#">i want to</a></div>
           </div>
 
-          <div class="bg-gray-100 rounded-lg p-5 m-auto  ">
+            <div class="bg-gray-50 rounded-lg p-5 m-auto  ">
               <h4 class=" font-bold mb-5 ">Recent Transections</h4>
               <div class="divide-y divide-gray-300 ">
                 <div class="py-4">
@@ -76,9 +76,8 @@
                   <p class="text-sm font-bold ">withdrawal transfer to bank-xx11</p>
                 </div>
               </div>              
-          </div>
-          </div>
-            
+            </div>
+          </div> 
         </header>
 
 
@@ -176,7 +175,7 @@
 
 
         <aside class="col-span-2 w-full  md:my-14  ">
-          <div class=" p-2 bg-gray-100 rounded-md ">
+          <div class=" p-2 bg-gray-50 rounded-md ">
             <div>
               <h4 class="font-bold ">retirement strategy</h4>
               <div class="w-full  ">
@@ -187,61 +186,60 @@
 
               <div class="w-full mt-6  ">
                 <p class="text-xs ">Default range slider:</p>
-                <Input class="slider w-9/12" type="range" name=""  value="45" min="0" max="100" onChange="rangeSlide1(this.value)" onmousemove="rangeSlide1(this.value1)">
+                <Input class="slider w-9/12" type="range" name=""  value="45" min="0" max="100" onChange="rangeSlide1(this.value)" onmousemove="rangeSlide1(this.value)">
                   <span class="text-xs py-0.5 px-2 bg-white " id="rangeValue1"></span></Input>
-              </div>
-                
+              </div>   
             </div>
+
             <div class="py-4 text-xs">
               <p class="py-4">Employer contributions<span>8.4%</span></p>
               <p class="pb-4">Intrest rate<span>8.4%</span></p>
-              <button class="bg-indigo-500 py-2 px-8 rounded-md text-white mt-4 text-sm w-full ">Update</button>
+              <button class="bg-indigo-600 py-2 px-8 rounded-md text-white mt-4 text-sm w-full ">Update</button>
               <div class="text-indigo-500 mt-4 w-full text-center">
                 <a  href="#">View help Doc ></a>
-              </div>
+              </div>              
             </div>
-          
-            
 
             
           </div>
-         
-          
+          <div class="border-l-2 border-indigo-500 px-4 mt-6 text-sm ">
+            <p class="mt-2 ">Are you considring a</p>
+            <p class="font-bold">Housing Advance ?</p>
+            <p class="text-xs text-gray-400 mt-2 ">Limited Time Reduce intrest</p>
+            <p class="text-indigo-500 mt-3 text-xs "><a href="">Learn More ></a></p>
+          </div>
         </aside>
-
+        <img class="fixed bottom-0 right-0 w-36 -scale-x-100 " src="pic/logo1.png" alt="">
     </div>
-
-
     <script >
-    
-                function rangeSlide(value) {
-                    document.getElementById('rangeValue').innerHTML = value ;
+        function rangeSlide(value) {
+          document.getElementById('rangeValue').innerHTML = value ;
                 }
-                function rangeSlide1(value) {
-                    document.getElementById('rangeValue1').innerHTML = value;
+        function rangeSlide1(value) {
+            document.getElementById('rangeValue1').innerHTML = value ;
                 }
         var ctx = document.getElementById('chart');
 
-var myChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ['20','', '25','', '30','', '35','', '40','', '60','', '65' ],
-    datasets: [
-      {
-        label: 'Empolyer',
-        data: [5 , 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90],
-        backgroundColor: '#2901ad',
-      },
-      {
-        label: 'Empolyee',
-        data: [5 , 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90],
-        backgroundColor: '#5835cc',
-      },
-      {
-        label: 'Total Interest',
-        data: [5 , 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90],
-        backgroundColor: '#8266dd',
-      }
+        var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+          labels: ['20','', '25','', '30','', '35','', '40','', '60','', '65' ],
+          datasets: [
+          {
+          label: 'Empolyer',
+          data: [5 , 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90],
+          backgroundColor: '#2901ad',
+          },
+        {
+          label: 'Empolyee',
+          data: [5 , 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90],
+          backgroundColor: '#5835cc',
+         },
+       {
+          label: 'Total Interest',
+          data: [5 , 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90],
+          backgroundColor: '#8266dd',
+        }
     ]
   },
   options: {
